@@ -11,7 +11,7 @@ export default function CartDetail() {
 
   const {cart, removeFromCart, buyAll,valorTotal, totalItems} = useContext(CartContext);
   console.log(cart);
-  // let valorTotal =cant();
+  
   console.log(valorTotal);
 
   return (
@@ -24,7 +24,7 @@ export default function CartDetail() {
         >
           <div className="ms-2 me-auto">
             <div className="fw-bold">{item.nombre}</div>
-            $ {item.precio} U
+            {item.counter} {item.category} x   $ {item.precio} U
           </div>
          <Card.Img variant="top"style={{ width: '7rem' }}  src={item.img}  />
           <Button variant="outline-secondary" onClick={() => removeFromCart(item.id)}>Eliminar del carrito</Button>
@@ -35,9 +35,11 @@ export default function CartDetail() {
         as={Link} to="/" variant="outline-success">Volver a la tienda</Button> <br/> <h1>Este carrito está vacio</h1></div> }</div>
       </ListGroup>
       { cart.length > 0 && <div>
-        <h2 className={customCss.text}>Total : $ {valorTotal}</h2>
+        <h2 className={customCss.text}>Valor Total : $ {valorTotal}</h2>
         <hr/>
-        <Button variant="outline-dark" onClick={() => buyAll()}>Comprar </Button>
+        <h2 className={customCss.text}>Total items: {totalItems}</h2>
+        <hr/>
+        <Button as={Link} to='/cart/checkout' variant="outline-dark" onClick={() => buyAll()}>Comprar </Button>
         <hr/>
         <Button variant="outline-secondary" onClick={() => buyAll()}>Vaciar carrito</Button>
       </div>}
