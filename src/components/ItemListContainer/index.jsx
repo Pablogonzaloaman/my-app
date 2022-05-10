@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import {getFirestore, collection, getDocs, query, where} from "firebase/firestore";
+import styles  from "./index.module.css";
 
 export default function ItemListContainer(){
     
@@ -29,7 +30,12 @@ export default function ItemListContainer(){
 
     return(
         <> 
+             <div className={styles.itemListContainer}>
+            
+
             <ItemList products={products2} />
+
+            </div>
         </>
     );
 

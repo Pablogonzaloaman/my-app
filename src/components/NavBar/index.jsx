@@ -26,10 +26,10 @@ export default function NavBar() {
                 navbarScroll>
               
                 <Nav.Link href="#action1"><Link to= "/">Inicio</Link></Nav.Link>
-                <Nav.Link><Link to="../category/calzas"> Calzas</Link></Nav.Link> 
+                {/* <Nav.Link><Link to="../category/calzas"> Calzas</Link></Nav.Link> 
                 <Nav.Link><Link to="../category/tops"> Tops</Link></Nav.Link>
                 <Nav.Link><Link to="../category/shorts"> Shorts</Link></Nav.Link>
-                <Nav.Link><Link to="../category/bikers"> Bikers</Link></Nav.Link>
+                <Nav.Link><Link to="../category/bikers"> Bikers</Link></Nav.Link> */}
                 <NavDropdown title="Productos" id="navbarScrollingDropdown">
                   <NavDropdown.Item><Link to="../category/calzas"> Calzas</Link></NavDropdown.Item>
                   <NavDropdown.Item><Link to="../category/tops"> Tops</Link></NavDropdown.Item>
@@ -39,7 +39,7 @@ export default function NavBar() {
                   <NavDropdown.Item href="#action5"></NavDropdown.Item>
                 </NavDropdown>
               </Nav>
-              <Form className="d-flex">
+              {/* <Form className="d-flex">
                 <FormControl
                   type="search"
                   placeholder=""
@@ -47,7 +47,7 @@ export default function NavBar() {
                   aria-label="Search"
                 />
                 <Button variant="outline-danger">Buscar</Button>
-              </Form>
+              </Form> */}
             </Navbar.Collapse>
             <CartWidget/>
           </Container>

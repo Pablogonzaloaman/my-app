@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail';
 import { useParams } from "react-router-dom";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
+import styles from "./index.module.css";
 
 export default function ItemDetailContainer() {
     
@@ -26,7 +27,10 @@ export default function ItemDetailContainer() {
 
   return (
     <>
+    <div className={styles.itemContainer}> 
+       
         <ItemDetail producto={product2} stock={stock} count={count} img={product2.img} cantidad={cantidad} setCantidad={setCantidad} detalle={product2.detalle} nombre={product2.nombre}  talle={product2.talle} />
+      </div>
     </>
        
   )
