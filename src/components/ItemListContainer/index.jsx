@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import {getFirestore, collection, getDocs, query, where} from "firebase/firestore";
 import styles  from "./index.module.css";
 import Carousel from "../Carousel";
+import { Container } from "react-bootstrap";
 
 
 export default function ItemListContainer(){
@@ -28,7 +29,8 @@ export default function ItemListContainer(){
         });
         console.log(products2);
         
-    }, [categoryId]);
+    },
+     [categoryId]);
 
     return(
         <> 
@@ -39,8 +41,11 @@ export default function ItemListContainer(){
             
                 
             <ItemList products={products2} />
-
+            
             </div>
+            
+         
+            
         </>
     );
 

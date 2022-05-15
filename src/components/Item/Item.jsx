@@ -21,7 +21,7 @@ export default function Item({id, nombre, precio, img, stock }) {
                ${precio}
               </Card.Text>
           </Card.Body>
-            <Button as={Link} to={`/product/${id}`} variant="outline-info">Ver Detalle</Button>
+            <Button as={Link} to={`/product/${id}`} variant="dark">Ver Detalle</Button>
         </Card>
       </div>
      

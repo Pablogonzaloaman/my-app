@@ -4,40 +4,43 @@ import {
     Container,
     Nav,
     NavDropdown,
-    Form,
-    FormControl,
-    Button,
+    Button
+  
   } from "react-bootstrap";
+ 
 import { Link } from "react-router-dom";
 import CartWidget from "../CartWidget";
 
 export default function NavBar() {
     return (
+      
       <>
        
-       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+       <Navbar collapseOnSelect expand="lg" bg="dark" variant="black" >
           <Container fluid>
-            <Navbar.Brand ><Link to= "/">VALT ActiveWear</Link></Navbar.Brand>
+           
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
                 className="me-auto my-2 my-lg-0"
                 style={{ maxHeight: "100px" }}
+               
                 navbarScroll>
               
-                <Nav.Link href="#action1"><Link to= "/">Inicio</Link></Nav.Link>
-                {/* <Nav.Link><Link to="../category/calzas"> Calzas</Link></Nav.Link> 
-                <Nav.Link><Link to="../category/tops"> Tops</Link></Nav.Link>
-                <Nav.Link><Link to="../category/shorts"> Shorts</Link></Nav.Link>
-                <Nav.Link><Link to="../category/bikers"> Bikers</Link></Nav.Link> */}
-                <NavDropdown title="Productos" id="navbarScrollingDropdown">
+                <Nav.Link ><Link to= "/"><Button variant="dark">Inicio</Button></Link></Nav.Link>
+                 <Nav.Link><Link to="../category/calzas"><Button variant="dark"> Calzas</Button></Link></Nav.Link> 
+                <Nav.Link><Link to="../category/tops"><Button variant="dark"> Tops</Button> </Link></Nav.Link>
+                <Nav.Link><Link to="../category/shorts"><Button variant="dark"> Shorts</Button> </Link></Nav.Link>
+                <Nav.Link><Link to="../category/bikers"><Button variant="dark"> Bikers</Button> </Link></Nav.Link> 
+                <Navbar.Brand ><Link to= "/"><img width={130} src="../fotos/logoValt.png" alt="" /></Link></Navbar.Brand>
+                {/* <NavDropdown  title="Productos" id="navbarScrollingDropdown">
                   <NavDropdown.Item><Link to="../category/calzas"> Calzas</Link></NavDropdown.Item>
                   <NavDropdown.Item><Link to="../category/tops"> Tops</Link></NavDropdown.Item>
                   <NavDropdown.Item ><Link to="../category/shorts"> Short</Link></NavDropdown.Item>
                   <NavDropdown.Item ><Link to="../category/bikers"> Bikers</Link></NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5"></NavDropdown.Item>
-                </NavDropdown>
+                  <NavDropdown.Item ></NavDropdown.Item>
+                </NavDropdown> */}
               </Nav>
               {/* <Form className="d-flex">
                 <FormControl

@@ -1,0 +1,1 @@
+INSTALAR LA CLI DE FIREBASE TOOLSnpm install -g firebase-tools## PARA DEPLOY PRIMERA VEZ:firebase loginfirebase init(no olvidarse de usar build como public directory!)(solo la primera vez luego no!)Primero crear el build local con: npm run build y luego: firebase deploy
