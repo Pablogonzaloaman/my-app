@@ -12,9 +12,7 @@ return (
     <Container>
     <Row>
     <Col > <img style={{ padding: '1rem' }}  className="d-block w-100" src="../fotos/bannerRedes.png" alt="" />  </Col>
-    {/* <Col><img src="../fotos/logoFacebook.png" alt="" /></Col>
-    <Col><img src="../fotos/logoWhat.png" alt="" /></Col>
-    <Col><img src="../fotos/logoInstagram.png" alt="" /></Col> */}
+    
   </Row>
     </Container>
     </div>
