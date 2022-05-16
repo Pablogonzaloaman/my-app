@@ -76,7 +76,7 @@ export default function CartCheckout() {
             </Form.Text>
         </Form.Group></Form>
         </>}
-        {checkoutId === "" ? <Button variant="primary" type='submit' onClick={() => sendOrder()}>Confirmar</Button> :
+        {checkoutId === "" ? <Button variant="dark" type='submit' onClick={() => sendOrder()}>Confirmar</Button> :
         <h5> Muchas gracias por su compra!!! <hr /> Id de compra :<strong>" {checkoutId} "</strong>,  este es tu id, guardalo y usalo ante alguna eventualidad. <hr /> Para seguir comprando, retorna al Inicio .<hr/> <img width={200} height={200} src="../fotos/VALTactivewearLogo-02.png" /></h5>}
        
     </>

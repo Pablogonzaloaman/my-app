@@ -4,13 +4,12 @@ import { useParams } from "react-router-dom";
 import {getFirestore, collection, getDocs, query, where} from "firebase/firestore";
 import styles  from "./index.module.css";
 import Carousel from "../Carousel";
-import { Container } from "react-bootstrap";
-
+import Banner from "../Banner";
 
 export default function ItemListContainer(){
     
 
-    const [products2, setProducts2] = useState([]);
+    const [products, setProducts] = useState([]);
 
     const {categoryId} = useParams();
 
@@ -25,9 +24,9 @@ export default function ItemListContainer(){
         else{productosRef = query(collection(db, "products"), where("category", "==", categoryId))};
 
         getDocs(productosRef).then((res) => {
-            setProducts2(res.docs.map(prod => ({id: prod.id, ...prod.data()})))
+            setProducts(res.docs.map(prod => ({id: prod.id, ...prod.data()})))
         });
-        console.log(products2);
+        console.log(products);
         
     },
      [categoryId]);
@@ -37,15 +36,10 @@ export default function ItemListContainer(){
             <div>
             <Carousel/>
             </div>
-             <div className={styles.itemListContainer}>
-            
-                
-            <ItemList products={products2} />
-            
-            </div>
-            
-         
-            
+             <div className={styles.itemListContainer}>            
+            <ItemList products={products} />            
+            </div>            
+            <Banner/>        
         </>
     );
 

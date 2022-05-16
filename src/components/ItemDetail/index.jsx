@@ -15,7 +15,7 @@ export default function ItemDetail({img,nombre, stock, count,producto, cantidad,
   <Row>
     <Col>
     
-     <Card key={id} style={{ width: '20rem' }}>
+     <Card key={id} style={{ width: '18rem' }}>
    
    <Card.Img variant="top" alt= {id} src={img} />
    <Card.Body>
