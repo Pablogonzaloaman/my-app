@@ -8,7 +8,7 @@ export default function CartWidget(){
   
     return(
         <>
-            { totalItems > 0 && <Link to="/cart">🛒{totalItems}</Link>}
+            { totalItems > 0 && <Link to="/cart" >🛒{totalItems}</Link>}
         </>
     );
 }

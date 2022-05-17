@@ -1,15 +1,13 @@
 import React from 'react';
-import { Carousel,Row,Container, Col } from 'react-bootstrap';
-import customCss from "./carousel.module.css";
+import { Carousel,Container } from 'react-bootstrap';
+
 
 export default function CarouselImagenes() {
 
   
   return (
       <>
-      <Container>
-     
- 
+      <Container>    
  <Carousel>
   <Carousel.Item>
     <img 
@@ -45,10 +43,7 @@ export default function CarouselImagenes() {
   </Carousel.Item>
 </Carousel>
 
-</Container>
-    
-
-      </>
-    
+</Container>   
+      </>    
   )
 }
