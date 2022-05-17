@@ -2,7 +2,7 @@
 
 <p align="center">VALT ACTIVEWEAR, app ecommerce, creada con React.js, Bootstrap, y Firebase</p>
 
-![](/preview.gif)
+![](/muestra.gif)
 
 ## Links
 
@@ -26,7 +26,7 @@ cd my-app
 npm install
 ```
 
-Run the app
+Correr la app
 ```
 npm start
 ```
@@ -35,5 +35,5 @@ npm start
 
 *Pablo Gonzalo Aman*
 
-- [Perfil](https://github.com/Pablogonzaloaman/my-app )
+- [Perfil](https://github.com/Pablogonzaloaman )
 - [Linkedin](https://www.linkedin.com/in/pablogonzaloaman/)
